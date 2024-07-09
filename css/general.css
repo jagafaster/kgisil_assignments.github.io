@@ -1,0 +1,81 @@
+*{
+    font-size: 36px;
+    font-family: 'calibri';
+}
+
+body{
+    background-image: url(../img/tasks/bg.jpg);
+    background-size: cover;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 90%;
+    grid-template-rows: 1fr 80% 1fr;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    /* gap: 10px; */
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+    grid-area: header;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr 1fr 1fr;
+}
+
+main{
+    grid-area: main;
+    color: rgb(130, 255, 170);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+aside{
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+footer{
+    text-align: center;
+    color: aliceblue;
+    grid-area: footer;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(60, 95, 9);
+    margin-left: 20px;
+    
+}
+
+h1{
+    font-family: 'arial';
+}
+
+/* classes */
+
+.current{
+    background-color: aliceblue;
+    color: green;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-div{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
